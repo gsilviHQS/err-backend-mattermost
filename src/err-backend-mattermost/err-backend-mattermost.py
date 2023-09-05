@@ -340,6 +340,8 @@ class MattermostBackend(ErrBot):
                 "password": self._password,
                 "token": self._personal_access_token,
                 "mfa_token": self._mfa_token,
+                "keepalive": True,
+                'keepalive_delay': 30,
             }
         )
         self.driver.login()
