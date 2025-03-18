@@ -11,7 +11,7 @@ Requirements
  - Mattermost with APIv4
  - Python >= 3.7
  - websockets 3.2
- - `mattermostdriver <https://github.com/Vaelor/python-mattermost-driver>`_ > 4.0
+ - `mattermostautodriver <https://github.com/Vaelor/python-mattermost-driver>`_ > 4.0
 
 
 Python Virtual Environment

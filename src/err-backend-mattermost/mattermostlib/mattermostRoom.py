@@ -5,7 +5,7 @@ from errbot.backends.base import (
     RoomError,
     UserDoesNotExistError,
 )
-from mattermostdriver.exceptions import (
+from mattermostautodriver.exceptions import (
     NotEnoughPermissions,
     ResourceNotFound,
     InvalidOrMissingParameters,

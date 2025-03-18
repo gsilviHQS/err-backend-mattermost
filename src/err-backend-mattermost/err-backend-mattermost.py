@@ -16,8 +16,8 @@ from errbot.backends.base import (
 from errbot.core import ErrBot
 from errbot.rendering import md
 from errbot.utils import split_string_after
-from mattermostdriver import Driver
-from mattermostdriver.exceptions import (
+from mattermostautodriver import Driver
+from mattermostautodriver.exceptions import (
     InvalidOrMissingParameters,
     NotEnoughPermissions,
     ContentTooLarge,
@@ -276,7 +276,7 @@ class MattermostBackend(ErrBot):
         If it does not exist, it will be created.
         """
         try:
-            return self.driver.channels.create_direct_message_channel(
+            return self.driver.channels.create_direct_channel(
                 options=[userid, other_user_id]
             )
         except (InvalidOrMissingParameters, NotEnoughPermissions):
